@@ -1,14 +1,16 @@
 package com.example.islami.ui.home.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.islami.R
+import com.example.islami.ui.Constants
 import com.example.islami.ui.home.fragments.adapter.SuraNameAdapter
+import com.example.islami.ui.suraDetails.SuraDetailsActivity
 
 class QuranFragment : Fragment() {
     val suranames = listOf(
@@ -149,9 +151,18 @@ class QuranFragment : Fragment() {
         adapter = SuraNameAdapter(suranames)
         adapter.onItemClickListener = object : SuraNameAdapter.OnItemClicklistener {
             override fun onItemClick(position: Int, name: String) {
-                Toast.makeText(requireContext(), name, Toast.LENGTH_SHORT).show()
+                //Toast.makeText(requireContext(), name, Toast.LENGTH_SHORT).show()
+                showSuraDetails(position, name)
             }
         }
         recyclerView.adapter = adapter
+    }
+
+    fun showSuraDetails(pos: Int, name: String) {
+        val intent = Intent(requireActivity(), SuraDetailsActivity::class.java)
+        intent.putExtra(Constants.EXTRS_SURANAME, name)
+        intent.putExtra(Constants.EXTRS_SURAPOSTION, pos)
+        startActivity(intent)
+
     }
 }

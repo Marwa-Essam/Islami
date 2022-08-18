@@ -47,6 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/gold"
+
         app:layout_constraintBottom_toBottomOf="@id/suraname" />
 
     <androidx.recyclerview.widget.RecyclerView
