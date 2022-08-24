@@ -6,18 +6,16 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/item_sura_verse"
+        android:id="@+id/item_hadeth_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:fontFamily="@font/dthuluth"
         android:padding="12dp"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:fontFamily="@font/dthuluth"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="الفاتحة" />
-
+        tools:text="الحاديث الاول " />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

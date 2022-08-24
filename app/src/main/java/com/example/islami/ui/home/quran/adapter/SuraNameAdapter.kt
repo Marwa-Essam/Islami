@@ -1,4 +1,4 @@
-package com.example.islami.ui.home.fragments.adapter
+package com.example.islami.ui.home.quran.adapter
 
 import android.view.LayoutInflater
 import android.view.View

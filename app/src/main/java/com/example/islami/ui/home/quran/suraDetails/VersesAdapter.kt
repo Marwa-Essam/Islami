@@ -1,4 +1,4 @@
-package com.example.islami.ui.suraDetails
+package com.example.islami.ui.home.quran.suraDetails
 
 import android.view.LayoutInflater
 import android.view.View

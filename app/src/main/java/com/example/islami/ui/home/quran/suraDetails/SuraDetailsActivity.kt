@@ -1,4 +1,4 @@
-package com.example.islami.ui.suraDetails
+package com.example.islami.ui.home.quran.suraDetails
 
 import android.os.Bundle
 import android.widget.TextView
