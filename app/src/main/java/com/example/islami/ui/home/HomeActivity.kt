@@ -3,10 +3,10 @@ package com.example.islami
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.islami.ui.home.fragments.HadethFragment
-import com.example.islami.ui.home.fragments.QuranFragment
 import com.example.islami.ui.home.fragments.RadioFragment
 import com.example.islami.ui.home.fragments.SebhaFragment
+import com.example.islami.ui.home.hadeth.HadethFragment
+import com.example.islami.ui.home.quran.QuranFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 

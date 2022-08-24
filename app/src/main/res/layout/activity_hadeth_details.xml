@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg3"
-    tools:context=".ui.home.quran.suraDetails.SuraDetailsActivity">
+    tools:context=".ui.home.hadeth.hadethDetails.HadethDetailsActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -29,22 +29,21 @@
                     android:id="@+id/title_text_islami"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/dthuluth"
                     android:text="اسلامى"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/dthuluth"
-                    android:gravity="center"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-
-    <include layout="@layout/content_sura_details" />
+    <include layout="@layout/content_hadeth_details" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
